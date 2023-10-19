@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function saludar() {
+        
+         
+            usuario=document.getElementById('inputusuario').value;
+            contraseña=document.getElementById('inputcontraseña').value; 
+
+            if(usuario == "d" && contraseña == "m"){
+            alert("Bienvenido, David");
+            window.location.href = "";
+        
+        }
+        else 
+          {
+          alert("Credenciales no validas");
+          }
+        }
+    </script>
+
+</head>
+<body>
+       
+    <form action="">
+                <label for="">Usuario </label>
+                <input type="text" name="usuario" id="inputusuario"> <br>
+                
+                <label for="">Contraseña</label>
+                <input type="password" name="contraseña" id="inputcontraseña"><br>
+    
+                <button type="button" onclick = "saludar()">Iniciar</button>
+    
+    </form>
+
+</body>
+</html>
